@@ -1,0 +1,56 @@
+@import 'variables';
+@import 'mixins';
+@import 'base';
+@import 'header';
+@import 'footer';
+
+.hero {
+    padding: 50px 0;
+    border-bottom: 1px solid $border;
+
+    h1 span { color: $accent; }
+    p { 
+        font-family: $font-mono;
+        line-height: 0;
+        color: $muted; 
+        font-size: 16px; 
+        max-width: 800px; 
+        margin-bottom: 20px;
+    }
+
+    .hire {
+        margin-top: 20px;
+        @include button($accent, $bg);
+        border-color: $accent;
+    }
+}
+
+.section { 
+    padding: 50px 0; 
+}
+
+.cards {
+    @include grid($pad);
+    margin-top: 30px;
+
+    .card {
+        flex: 1 1 300px;
+        background: $surface;
+        border: 1px solid $border;
+        border-radius: $radius;
+        padding: $pad;
+        transition: border-color 0.2s;
+
+        &:hover { border-color: $accent; }
+
+        h3 { margin-bottom: 10px; }
+        p { color: $muted; margin-top: 0; }
+        
+        .stack {
+            font-family: $font-mono;
+            font-size: 13px;
+            color: $accent;
+            margin-top: 20px;
+        }
+    }
+}

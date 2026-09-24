@@ -1,0 +1,37 @@
+body {
+    font-family: $font-main;
+    font-size: $fz;
+    color: $text;
+    background: $bg;
+    margin: 0;
+    line-height: 1.4;
+}
+
+h1, h2, h3 {
+    margin-top: 0;
+    font-weight: 600;
+}
+
+h1 { font-size: $fz-big; }
+
+a {
+    color: $accent;
+    text-decoration: none;
+    &:hover { text-decoration: underline; }
+}
+
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+// Мелкий моноширинный текст для заголовков секций
+.tag {
+    font-family: $font-mono;
+    font-size: 13px;
+    color: $accent;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    margin-bottom: 10px;
+}

@@ -1,0 +1,79 @@
+@import 'variables';
+@import 'mixins';
+
+.contact {
+    padding: 50px 0;
+
+    .row {
+        @include grid($pad);
+        margin-top: 30px;
+    }
+
+    .info {
+        flex: 1 1 70px;
+        background: $surface;
+        border: 1px solid $border;
+        border-radius: $radius;
+        padding: $pad;
+
+        p { margin: 15px 0; color: $muted; }
+        b { color: $text; }
+
+        .links {
+            @include grid(10px);
+            margin-top: 25px;
+            
+            a {
+                @include button(transparent, $text);
+                text-align: center;
+                
+                &:hover {
+                    background: $accent;
+                    color: $bg;
+                    opacity: 1;
+                }
+            }
+        }
+    }
+
+    form {
+        flex: 1 1 300px;
+        background: $surface;
+        border: 1px solid $border;
+        border-radius: $radius;
+        padding: $pad;
+
+        label {
+            display: block;
+            font-size: 13px;
+            color: $accent;
+            margin-bottom: 5px;
+            font-family: $font-mono;
+        }
+
+        input, textarea {
+            resize: none;
+            width: 100%;
+            box-sizing: border-box;
+            background: $bg;
+            border: 1px solid $border;
+            border-radius: $radius;
+            padding: 12px;
+            margin-bottom: 15px;
+            color: $text;
+            font-family: $font-main;
+            font-size: $fz;
+
+            &:focus {
+                outline: none;
+                border-color: $accent;
+            }
+        }
+
+        button {
+            @include button($accent, $bg);
+            width: 100%;
+            border-color: $accent;
+        }
+    }
+}

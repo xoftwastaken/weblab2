@@ -1,0 +1,41 @@
+.about {
+  padding: 50px 0;
+}
+.about h1 {
+  margin-bottom: 20px;
+}
+.about .text {
+  background: #161616;
+  border: 1px solid #2a2a2a;
+  border-radius: 25px;
+  padding: 24px;
+  max-width: 1100px;
+  margin-bottom: 50px;
+}
+.about .text p {
+  color: #888888;
+}
+.about .skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  list-style: none;
+  padding: 0;
+  margin-top: 30px;
+}
+.about .skills li {
+  flex: 1 1 200px;
+  background: #161616;
+  border: 1px solid #2a2a2a;
+  border-radius: 25px;
+  padding: 24px;
+}
+.about .skills li b {
+  color: #e0e0e0;
+  display: block;
+  margin-bottom: 5px;
+}
+.about .skills li span {
+  color: #888888;
+  font-size: 14px;
+}/*# sourceMappingURL=about.css.map */

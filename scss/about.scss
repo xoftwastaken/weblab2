@@ -1,0 +1,39 @@
+@import 'variables';
+@import 'mixins';
+
+.about {
+    padding: 50px 0;
+
+    h1 {
+        margin-bottom: 20px;
+    }
+
+    .text {
+        background: $surface;
+        border: 1px solid $border;
+        border-radius: $radius;
+        padding: $pad;
+        max-width: 1100px;
+        margin-bottom: 50px;
+
+        p { color: $muted; }
+    }
+
+    .skills {
+        @include grid($pad);
+        list-style: none;
+        padding: 0;
+        margin-top: 30px;
+
+        li {
+            flex: 1 1 200px;
+            background: $surface;
+            border: 1px solid $border;
+            border-radius: $radius;
+            padding: $pad;
+
+            b { color: $text; display: block; margin-bottom: 5px; }
+            span { color: $muted; font-size: 14px; }
+        }
+    }
+}

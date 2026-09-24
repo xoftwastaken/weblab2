@@ -1,0 +1,24 @@
+@mixin button($bg-color, $text-color) {
+    display: inline-block;
+    background: $bg-color;
+    color: $text-color;
+    border: 1px solid $border;
+    border-radius: $radius;
+    padding: 12px 24px;
+    font-size: $fz;
+    font-family: $font-mono;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.2s;
+
+    &:hover {
+        opacity: 0.8;
+        border-color: $accent;
+    }
+}
+
+@mixin grid($gap) {
+    display: flex;
+    flex-wrap: wrap;
+    gap: $gap;
+}
